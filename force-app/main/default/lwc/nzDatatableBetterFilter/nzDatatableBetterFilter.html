@@ -1,0 +1,21 @@
+<template>
+    <div onclick={openOrClose} style={closedCssStyle}>
+        <template lwc:if={opened}>
+            <div class="arrow-container">
+                <div class="arrow arrow-top">&lt;</div>
+                <div class="arrow arrow-middle">&lt;</div>
+                <div class="arrow arrow-bottom">&lt;</div>
+            </div>
+        </template>
+        <template lwc:else>
+            <div class="arrow-container">
+                <div class="arrow arrow-top">&gt;</div>
+                <div class="arrow arrow-middle">&gt;</div>
+                <div class="arrow arrow-bottom">&gt;</div>
+            </div>
+        </template>
+    </div>
+    <template if:true={opened}>
+        Test
+    </template>
+</template>
